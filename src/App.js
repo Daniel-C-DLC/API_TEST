@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/card';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='title'>Pokedex</h1>
+      <div className='card'>
+        <div className='card-img'>
+        <img className='photo-card'></img>
+        </div>
+        <div className='card-content'>
+        <p className='descripcion-card'></p>
+        </div>
+      </div>
     </div>
   );
 }
